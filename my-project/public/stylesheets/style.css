@@ -1,0 +1,29 @@
+
+body{
+	width: 100%;
+	height: 100%;
+    padding: 0;
+    overflow: hidden;
+    min-width: 773px;
+}
+#benner{
+		width: 100%;
+  	height: 700px;
+    background: #555 url(../../img/ecshop-bg.png) no-repeat center center;
+    background-size: cover;
+}
+.logo{
+	width:155px;
+	height:38px;
+	position: absolute;
+	left:60px;
+	top:120px;
+}
+.jm{
+	position: fixed;
+	left:40%;
+	top:30%;
+	width:302px;
+	height:321px;
+	background:#0085FF;
+}
