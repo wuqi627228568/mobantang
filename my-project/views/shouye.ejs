@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="stylesheets/shouye.css"/>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	</head>
 	<body>
 		<div id="top">
@@ -43,5 +44,64 @@
 				<li><a href="">商品回收站</a></li>
 			</ul>
 		</div>
+		<div id="dhcd">
+			<div class="dhcd">
+				<p><span>导航菜单</span></p>
+			</div>
+			<div id="menu_list">
+				<ul>
+					<li class="lis co1">
+						商品管理
+						<ul id="uls">
+							<li class="lis_mach"><a  href="">商品列表</a></li>
+							<li class="lis_mach"><a  target="mainContent" href="">添加新商品</a></li>
+							<li class="lis_mach"><a href="">商品分类</a></li>
+							<li class="lis_mach"><a href="">用户评论</a></li>
+							<li class="lis_mach"><a href="">商品品牌</a></li>
+							<li class="lis_mach"><a href="">商品类型</a></li>
+							<li class="lis_mach"><a href="">商品回收站</a></li>
+							<li class="lis_mach"><a href="">图片处理</a></li>
+							<li class="lis_mach"><a href="">图片上传</a></li>
+							<li class="lis_mach"><a href="">图片导出</a></li>
+							<li class="lis_mach"><a href="">商品批量上传</a></li>
+							<li class="lis_mach"><a href="">商品批量导出</a></li>
+							<li class="lis_mach"><a href="">商品批量处理</a></li>
+							<li class="lis_mach"><a href="">商品批量修改</a></li>
+							<li class="lis_mach"><a href="">标签管理</a></li>
+							<li class="lis_mach"><a href="">虚拟商品列表</a></li>
+							<li class="lis_mach"><a href="">添加虚拟商品</a></li>
+						</ul>
+					</li>
+					<li class="lis co2">促销管理</li>
+					<li class="lis co3">订单管理</li>
+					<li class="lis co4">广告管理</li>
+					<li class="lis co5">报表统计</li>
+					<li class="lis co6">文章管理</li>
+					<li class="lis co7">会员管理</li>
+					<li class="lis co8">权限管理</li>
+					<li class="lis co9">系统设置</li>
+					<li class="lis co10">模版管理</li>
+					<li class="lis co11">数据库管理</li>
+					<li class="lis co12">短信管理</li>
+					<li class="lis co13">推荐管理</li>
+					<li class="lis co14">邮件群发管理</li>
+					<li class="lis co15">移动版管理</li>
+					<li class="lis co16">模版堂知识库</li>
+				</ul>
+			</div>
+			
+		</div>
+		<div class="wblj">
+				<iframe name="mainContent" src="https://www.baidu.com" width="1130px" height="500"></iframe>
+			</div>
 	</body>
+	<script>
+		$(".co1").click(function(){
+			if($("#uls").css("display")=="block"){
+				 $("#uls").hide()
+			}else{
+				$("#uls").show()
+			}
+		})
+	</script>
 </html>

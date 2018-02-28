@@ -94,3 +94,107 @@ ul,li,ol{
     text-align: center;
     background:url(../images/red.png)
 }
+#dhcd{
+	float: left;
+	width:200px;
+	height:500px;
+	overflow: auto;
+}
+.dhcd{
+	padding-left: 10px;
+    height: 34px;
+    padding-top: 0px;
+    background: #303030;
+
+}
+ .dhcd span{
+ 	line-height: 33px;
+    font-weight: bold;
+    padding: 4px 15px 4px 18px;
+    cursor: hand;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #fff;
+ }
+ #menu_list ul{
+ 	padding: 0;
+    margin: 0;
+    list-style-type: none;
+    color: #335B64;
+ }
+ .lis{
+ 	text-indent: 40px;
+ 	display: block;
+    border-top: #7f7f7f 1px solid;
+    width: 100%;
+    color: #FFF;
+    line-height: 42px;
+    text-align: left;
+ } 
+ .co1{
+ 	    background: #575757 url(../images/menu_1.png) 9px 0 no-repeat
+ }
+  .co2{
+ 	    background: #575757 url(../images/menu_2.png) 9px 0 no-repeat
+ }
+  .co3{
+ 	    background: #575757 url(../images/menu_3.png) 9px 0 no-repeat
+ }
+  .co4{
+ 	    background: #575757 url(../images/menu_4.png) 9px 0 no-repeat
+ }
+  .co5{
+ 	    background: #575757 url(../images/menu_5.png) 9px 0 no-repeat
+ } 
+   .co6{
+ 	    background: #575757 url(../images/menu_6.png) 9px 0 no-repeat
+ } 
+   .co7{
+ 	    background: #575757 url(../images/menu_7.png) 9px 0 no-repeat
+ } 
+   .co8{
+ 	    background: #575757 url(../images/menu_8.png) 9px 0 no-repeat
+ } 
+   .co9{
+ 	    background: #575757 url(../images/menu_9.png) 9px 0 no-repeat
+ } 
+   .co10{
+ 	    background: #575757 url(../images/menu_10.png) 9px 0 no-repeat
+ } 
+   .co11{
+ 	    background: #575757 url(../images/menu_11.png) 9px 0 no-repeat
+ } 
+   .co12{
+ 	    background: #575757 url(../images/menu_12.png) 9px 0 no-repeat
+ } 
+   .co13{
+ 	    background: #575757 url(../images/menu_13.png) 9px 0 no-repeat
+ } 
+   .co14{
+ 	    background: #575757 url(../images/menu_14.png) 9px 0 no-repeat
+ } 
+   .co15{
+ 	    background: #575757 url(../images/menu_15.png) 9px 0 no-repeat
+ } 
+   .co16{
+ 	    background: #575757 url(../images/menu_15.png) 9px 0 no-repeat
+ }
+ .wblj{
+ 	float: left;
+ }
+.lis_mach{
+	    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    font-weight: normal;
+    background: #575757;
+} 
+.lis_mach a{
+	font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #d7d7d7;
+}
