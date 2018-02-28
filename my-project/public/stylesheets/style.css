@@ -16,7 +16,7 @@ body{
 #benner{
 	width: 100%;
   	height: 700px;
-    background: #555 url(../../img/ecshop-bg.png) no-repeat;
+    background: #555 url(../images/ecshop-bg.png) no-repeat;
     background-size: cover;
 }
 .b_logo{
@@ -50,6 +50,7 @@ img{
 	width:300px;
 }
 .btn{
+	height: 50px;
 	margin-top:25px;
 	border: none;
 	width:303px;
@@ -75,6 +76,12 @@ img{
 }
 .last2{
 	float: right;
+}
+.bottom{
+	width:480px;
+	position: absolute;
+	top:335px;
+	left:-17px;
 }
 input{
 	width:300px;
