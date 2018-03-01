@@ -51,10 +51,10 @@
 			<div id="menu_list">
 				<ul>
 					<li class="lis co1">
-						商品管理
+						<p>商品管理</p>
 						<ul id="uls">
-							<li class="lis_mach"><a  href="">商品列表</a></li>
-							<li class="lis_mach"><a  target="mainContent" href="">添加新商品</a></li>
+							<li class="lis_mach"><a  href="javascript:void(0)">商品列表</a><iframe name="mainContent" src="http://localhost:8080/splb" width="1130px" height="500"></iframe></li>
+							<li class="lis_mach"><a  href="javascript:void(0)">添加新商品</a><iframe name="mainContent" src="http://localhost:8080/sptj" width="1130px" height="500"></iframe></li>
 							<li class="lis_mach"><a href="">商品分类</a></li>
 							<li class="lis_mach"><a href="">用户评论</a></li>
 							<li class="lis_mach"><a href="">商品品牌</a></li>
@@ -91,17 +91,20 @@
 			</div>
 			
 		</div>
-		<div class="wblj">
+		<!--<div class="wblj">
 				<iframe name="mainContent" src="https://www.baidu.com" width="1130px" height="500"></iframe>
-			</div>
+			</div>-->
 	</body>
 	<script>
-		$(".co1").click(function(){
+		$(".co1 p").click(function(){
 			if($("#uls").css("display")=="block"){
 				 $("#uls").hide()
 			}else{
 				$("#uls").show()
 			}
+		})
+		$(".lis_mach a").click(function(){
+			$(this).siblings().show().parent().siblings().children("iframe").hide()
 		})
 	</script>
 </html>

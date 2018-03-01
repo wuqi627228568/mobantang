@@ -1,0 +1,139 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color: #335B64;
+	font-size: 12px;
+	text-decoration: none; 
+}
+ul,li,ol{
+	list-style: none;
+}
+h1{
+	border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+p, td, div{
+	font: 12px Microsoft Yahei, "sans-serif", "Arial", "Verdana";
+}
+td,th{
+	 display: table-cell;
+    vertical-align: inherit;
+
+}
+table{
+	    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: grey
+}
+.one_span{
+	    color: #4c4c4c;
+    font-size: 18px;
+    font-weight: normal;
+}
+.one_span a{
+	    color: #333;
+}
+.two_span{
+	color: #4c4c4c;
+    font-size: 18px;
+    font-weight: normal;
+}
+.three_span{
+	  display: inline-block;
+    _display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.last_span{
+	float: right;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px 0 23px;
+    background: #c43926 url(../images/icon_add02.gif) no-repeat 6px center;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    margin-top:8px;
+} 
+#nav{
+	    margin-top: 0px;
+    background: #efefef;
+    padding-left: 10px;
+    height: 39px;
+}
+#nav span{
+	padding: 0 20px;
+    text-align: center;
+    font-size: 13px;
+    float: left;
+    display: block;
+    float: left;
+    color: #787878;
+    line-height: 39px;
+    cursor: hand;
+    cursor: pointer;
+}
+.label {
+    text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 5px 1em;
+    width: 30%;
+    line-height: 30px;
+    }
+.label select{
+	float: left;
+	margin:5px 0;
+}
+ select{
+ 	
+    	-webkit-appearance: menulist;
+    box-sizing: border-box;
+    align-items: center;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    color: black;
+    background-color: white;
+    cursor: default;
+    border-width: 1px;
+    border-style: solid;
+    border-color: initial;
+    border-image: initial;
+    
+    }
+.button {
+
+    padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.tj{
+	font-size: 14px;
+	line-height: 14px;
+	float: left;
+	margin: 0 5px;
+    padding: 1px 5px;
+    border: 1px solid #91C4D0;
+    border-right: 2px solid #278296;
+    border-bottom: 2px solid #278296;
+    background: #DDEEF2;
+    font-weight: 400;
+}
+.button-div {
+    text-align: center;
+    padding: 3px 0;
+}

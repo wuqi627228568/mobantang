@@ -58,7 +58,13 @@
 				psw: $("#psw").val()
 			},
 			success: function(res) {
-				console.log(res);
+				if(res.status==1){
+					console.log(res)
+				location.href="/shouye?r="+new Date().getTime();
+				}else{
+					alert(res.mssagee)
+				}
+				
 			}
 		})
 	}

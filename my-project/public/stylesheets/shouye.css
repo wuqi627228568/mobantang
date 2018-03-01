@@ -180,8 +180,11 @@ ul,li,ol{
    .co16{
  	    background: #575757 url(../images/menu_15.png) 9px 0 no-repeat
  }
- .wblj{
- 	float: left;
+ iframe{
+ 	display:none;
+ 	position: absolute;
+ 	left:200px;
+ 	top:128px;
  }
 .lis_mach{
 	    font-size: 12px;

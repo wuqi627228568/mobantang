@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color: #335B64;
+	font-size: 12px;
+	text-decoration: none; 
+}
+ul,li,ol{
+	list-style: none;
+}
+h1{
+	border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+.one_span{
+	    color: #4c4c4c;
+    font-size: 18px;
+    font-weight: normal;
+}
+.one_span a{
+	    color: #333;
+}
+.two_span{
+	color: #4c4c4c;
+    font-size: 18px;
+    font-weight: normal;
+}
+.three_span{
+	  display: inline-block;
+    _display: inline;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.last_span{
+	float: right;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 10px 0 23px;
+    background: #c43926 url(../images/icon_add02.gif) no-repeat 6px center;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 13px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    margin-top:8px;
+} 
