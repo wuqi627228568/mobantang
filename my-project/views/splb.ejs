@@ -5,6 +5,7 @@
 		<title></title>
 	</head>
 	<link rel="stylesheet" href="stylesheets/splb.css" />
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<body>
 		<h1>
 			<span class="one_span"><a href="">ECSHOP 管理中心</a></span>
@@ -12,5 +13,34 @@
 			<span class="three_span"><a href=""><img src="images/jnsy.png" alt="" /></a></span>
 			<span ><a class="last_span" href="">+添加新商品</a></span>
 		</h1>
+	<% for(var i=0;i<list.length;i++) { %>
+	<div id="num">
+		<span class="num_1">商品名：<%= list[i].goods_name %></span>
+		<span class="num_2">价格：<%= list[i].price %></span>
+		<span class="num_3">商品货号：<%= list[i].sphh %></span>
+		<button  class="btn" onclick="del('<%=list[i]._id%>')">删除</button>
+	</div>
+	<% } %>
+	<%if(pageNo>1){%><a href="/splb?pageNo=<%=pageNo-1%>&count=<%=count%>">上一页</a><%}%><a href="/splb?pageNo=<%=pageNo+1%>&count=<%=count%>">下一页</a>
+	<p>总个数:</p>
 	</body>
+	<script>
+		function del(gid){
+			$.ajax({
+				url:"/api/goods_del",
+				type:"get",
+				data:{
+					gid:gid
+				},
+				success:function(res){
+					console.log(res);
+					if(res.status ==1){
+						location.reload(true);
+					}else{
+						alert(res.message)
+					}
+				}
+			})
+		}
+	</script>
 </html>

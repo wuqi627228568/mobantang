@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 		<link rel="stylesheet" href="stylesheets/sptj.css" />
 	</head>
 	<body>
@@ -28,7 +29,7 @@
 				<tbody>
 					<tr >
 						<td class="label">商品名称：</td>
-						<td><input type="text"  style="float: left; margin: 5px 0" size="30"/>
+						<td><input type="text"  id="goods_name" style="float: left; margin: 5px 0" size="30"/>
 						
 						<div style="float: left;margin:10px 0 0 5px">
 							
@@ -45,7 +46,7 @@
 						<tr>
 						<td class="label"><a href=""><img src="images/wen.jpg" alt="" /></a>商品货号：</td>
 						<td>
-						<input type="text"  style="float: left; margin: 5px 0" size="18"/><br>如果您不输入商品货号，系统将自动生成一个唯一的货号.
+						<input type="text" id="sphh" style="float: left; margin: 5px 0" size="18"/><br>如果您不输入商品货号，系统将自动生成一个唯一的货号.
 						
 						
 						</td>	
@@ -77,7 +78,7 @@
 					<tr >
 						<td class="label">本店售价：</td>
 						<td>
-							<input type="text"  style="float: left; margin: 5px 0" size="20"/>
+							<input type="text" id="price" style="float: left; margin: 5px 0" size="20"/>
 							<input type="button" value="按市场价计算"  style="float: left;margin: 5px 2px"/>
 						</td>
 					</tr>
@@ -129,8 +130,44 @@
 			</table>
 		</div>
 		<div class="button-div">
-			<input type="button" name="" id="" value="确定"  class="button"/>
+			<button class="button" onclick="addGoods()">确定</button>
 			<input type="reset" name="" id="" value="重置"  class="button"/>
 		</div>
+
 	</body>
+	<script>
+//			function addGoods() {
+//		var ajax = new XMLHttpRequest();
+//		ajax.open("post", "/api/add_goods");
+//		ajax.onreadystatechange = function(res) {
+//
+//		}
+//		var form = new FormData();
+//		form.append("goods_name", $("#goods_name").val());
+//		form.append("price", $("#price").val());
+//		form.append("sphh",$("#sphh").val());
+//		ajax.send(form); // form表单数据(post传参)
+//	}
+
+		function addGoods(){
+			$.ajax({
+				url:"/api/sptj",
+				type:"post",
+				data:{
+					goods_name:$("#goods_name").val(),
+					price:$("#price").val(),
+					sphh:$("#sphh").val(),
+				},
+				success: function(res) {
+				if(res.status==1){
+					console.log(res)
+				location.href="/splb?r="+new Date().getTime();
+				}else{
+					alert(res.mssagee)
+				}
+				
+			}
+			})
+		}
+	</script>
 </html>
